@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=prompt("enter your number with space seperated:").split(" ").map(Number);
+console.log(num);
+sum_even=0;sum_odd=0;
+for(i=0;i<num.length;i++){
+    if(num[i]%2==0){
+        sum_even=sum_even+num[i];
+    }
+    else{
+        sum_odd=sum_odd+num[i];
+    }
+}
+console.log(`sum of even numbers in the array:${sum_even},sum of odd numbers in the array:${sum_odd}`);
+
+    </script>
+</body>
+</html>
